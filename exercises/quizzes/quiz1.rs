@@ -16,6 +16,16 @@ fn main() {
     // You can optionally experiment here.
 }
 
+fn calculate_price_of_apples(noOfApples: i32) -> i32 {
+    let mut total_price = noOfApples * 2;
+
+    if noOfApples > 40 {
+        total_price = total_price - (1 * noOfApples)
+    }
+
+    total_price
+}
+
 // Don't change the tests!
 #[cfg(test)]
 mod tests {
